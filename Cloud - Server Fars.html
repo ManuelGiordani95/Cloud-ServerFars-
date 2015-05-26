@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> NAS, SAN, DAS CLOUD - SERVER FARS </title>
+<link rel="stylesheet" type="text/css"href="Stile.css">
+<h1 align="center"> NAS, SAN, DAS CLOUD - SERVER FARS </h1>
+<center><img src="http://upload.wikimedia.org/wikipedia/en/archive/f/f0/20150125020618!ICloud_logo_%28new%29.png"/>
+<body>
+<p align="center"> NAS, SAN e DAS, sono le iniziali dei tre sistemi di storage condiviso maggiormente utilizzati nelle configurazioni di rete.
+Vediamo le differenze basilari e gli ambienti di utilizzo principali.
+<h3 align="center"> DAS </h3>
+<p align="center">E' l'acronimo di Direct Attached Storage, la tecnologia piu' anziana delle tre.
+Come dice il nome un sistema DAS e' collegato direttamente al server tramite una connessione Fibre Channel, SAS (Serial Attached SCSI) o SCSI.
+L'apparato contiene piu' dischi configurati in RAID per garantire la ridondanza dei dati.
+La condivisione dei dati avviene tramite il server il che, per una rete, rappresenta un punto debole nella catena.
+Qualsiasi guasto al server, al router oppure allo switch che gestisce il segmento di rete o al cavo fisici a cui e' collegato il server, rende i dati inaccessibili agli altri computer della rete.
+Il basso costo iniziale e la semplicita' di gestione, eseguita dal sistema operativo stesso, e' il vantaggio principale del DAS, che pero' rimane valido solo in ambienti con uno o pochi server.
+Un secondo DAS aumenta la complessita' d'installazione in quanto l'amministratore deve configurare il sistema operativo del server a cui e' collegato. Se sul DAS risiedono applicazioni che sviluppano traffico di rete, per esempio un database di consultazione generale, le richieste provenienti dalla rete potrebbero consumare la banda passante a disposizione e provocare un decadimento delle prestazioni complessive.<br>
+<center><img src="http://www.solutekcolombia.com/images/seccion_recuperacion_escritorio_1.jpg"/></center>
+<h3 align="center"> NAS </h3>
+<p align="center">E'Network Attacched Storage, e' invece un server con un sistema operativo preinstallato e una scheda di rete per il collegamento alla LAN aziendale.
+I NAS sono gestibili da un'interfaccia grafica che appare in un browser digitandone l'indirizzo IP nella rete.
+L'amministratore puo' richiamarla da qualsiasi computer che si trovi nello stesso segmento di rete.
+Il sistema operativo integrato permette di specificare i diritti di accesso alle cartelle e ai file.
+Grazie alla presenza della connessione di rete, un NAS puo' essere posizionato ovunque, non e' necessaria la vicinanza a un server.
+Il dispositivo e' indipendente dal sistema operativo che gestisce la rete e pertanto puo' essere collegato in una LAN con server misti, a condizione che usino tutti il protocollo TCP/IP.
+Esistono di verse categorie di NAS, dal piu' semplice con un disco singolo e connessione di rete ai piu' sofisticati con dischi multipli, configurazione RAID, doppio accesso di rete.
+I NAS sono indicati per ambienti in cui conta l'economicita' di acquisto e la flessibilita' di gestione e in cui le prestazioni siano un fattore secondario.
+Il protocollo TCP/IP utilizzato e' infatti adatto per inviare e ricevere piccole quantita' di informazioni, ma poco indicato per quelle situazioni dove sia richiesto un traffico dati elevato.<br>
+<center><img src="http://www.01net.it/wp-content/uploads/sites/14/2014/10/Network_Attached_Storage_free.gif"/></center>
+<h3 align="center"> SAN </h3>
+<p align="center">Acronimo di Storage Area Network sono i dispositivi piu' recenti nella catena evolutiva.
+Rispetto ai NAS, utilizzano protocolli piu' sofisticati e talvolta impiegano connessioni fisiche dirette ai server (tipicamente in fibra) oppure usano la rete primaria mediante il protocollo iSCSI che comunque viene convogliato su porte di switch dedicate e percio' rimane separato dal resto del traffico e non incide sull'efficienza complessiva della LAN: spesso si tratta di connessioni Gigabit Ethernet che uniscono direttamente una o piu' porte del server e una o piu' porte del sistema di storage.
+Un vantaggio infatti di una SAN consiste nel permettere un collegamento ridondante per garantire la continua accessibilita' ai dati.
+La tipologia di trasferimento di grandi blocchi di dati li rende piu' efficienti nelle situazioni in cui sono presenti applicazioni che trasferiscono notevoli quantita' di dati, tipicamente database e servizi di posta elettronica.
+Dal momento che iSCSI e' basato a sua volta sul protocollo IP, aggiungere un dispositivo iSCSI alla rete e' un'operazione agevole e non comporta nessuna modifica all'ambiente estistente.
+Inoltre qualsiasi meccanismo di sicurezza che funzioni su IP sara' disponibile anche in iSCSI.
+Le SAN inoltre sono dotate di sistemi evoluti di protezione dei dati e hardware ridondanti per la massima protezione e disponibilita' dei dati senza interruzioni del servizio.
+Diversi dispositivi SAN possono essere collegati tra di loro con interfacce ad alta velocita' per aumentare la capacita' complessiva, e i nuovi dispositivi sono trasparenti alle macchine collegate che rileveranno l'aumento della capacita', ma non la presenza di nuovi dischi fisici. Rispetto a un sistema NAS o DAS, le SAN sono molto piu' scalabili e possono raggiungere capacita' dell’ordine di decine o centinaia di Terabyte.<br>
+<center><img src="http://cloudware.bg/files/uploads/cloud-server1.jpg"/></center>
+
+</body>
+</head>
+</html>
+
+
+
+
+
